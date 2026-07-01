@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Arpan Roy — Electrical Engineering Student, Aspiring Software Developer, Open Source Enthusiast. Building at the intersection of AI, space tech, and full-stack development." />
+  <meta name="keywords"
+    content="Arpan Roy, portfolio, software developer, AI, machine learning, full stack, Kolkata, open source" />
+  <meta name="author" content="Arpan Roy" />
+  <meta property="og:title" content="Arpan Roy — Developer Portfolio" />
+  <meta property="og:description" content="EE Student building at the frontier of AI, space tech & open source." />
+  <meta property="og:type" content="website" />
+  <title>Arpan Roy — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark-mode" data-scroll="0">
+
+  <!-- ══════════════════════════════════════
+       LOADING SCREEN
+  ══════════════════════════════════════ -->
+
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <p><<span>AR</span>/></p>
+      </div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+      <p class="loader-label mono">Initializing systems...</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       CURSOR
+  ══════════════════════════════════════ -->
+  <div id="cursor" aria-hidden="true"></div>
+  <div id="cursor-trail" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Back to top">
+        <span class="logo-bracket"><
+          ARG<span class="logo-bracket">/></span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <span class="theme-icon">☀</span>
+        </button>
+        <a href="#" class="btn-resume" download aria-label="Download resume">
+          <span>Resume</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+          </svg>
+        </a>
+        <button id="menu-toggle" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════════════════
+         HERO SECTION
+    ══════════════════════════════════════ -->
+    <section id="hero" aria-label="Introduction">
+      <!-- Particle canvas -->
+      <canvas id="starfield" aria-hidden="true"></canvas>
+
+      <!-- Nebula blobs -->
+      <div class="nebula nebula-1" aria-hidden="true"></div>
+      <div class="nebula nebula-2" aria-hidden="true"></div>
+      <div class="nebula nebula-3" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge reveal-up">
+          <span class="badge-dot"></span>
+          <span class="mono">Open to opportunities</span>
+        </div>
+
+        <h1 class="hero-name reveal-up delay-1">
+          <span class="name-line">Arpan</span> <span class="name-line gradient-text">Roy</span>
+        </h1>
+
+        <div class="hero-tagline reveal-up delay-2">
+          <span class="mono prefix">$ </span>
+          <span id="typewriter" class="mono typewriter-text"></span>
+          <span class="cursor-blink mono">▮</span>
+        </div>
+
+        <p class="hero-bio reveal-up delay-3">
+          B.Tech student at Goverment college of engineering and leather technology, Kolkata — building at the
+          intersection of
+          <em>AI&nbsp;&amp;&nbsp;ML</em>, <em>Blockchain technology</em>, and <em>open source contributor</em>.
+          I ship real products, not just prototypes.
+        </p>
+
+        <div class="hero-cta reveal-up delay-4">
+          <a href="#projects" class="btn-primary">
+            <span>View Projects</span>
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn-ghost">Contact Me</a>
+        </div>
+
+
+
+
+    </section>
+
+    <!-- ══════════════════════════════════════
+         ABOUT SECTION
+    ══════════════════════════════════════ -->
+    <section id="about" aria-label="About me">
+      <div class="section-inner">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow mono">// 01 — about</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: text -->
+          <div class="about-text reveal-left">
+            <p class="about-lead">
+
+
+              Hi, I'm Arpan Roy — a developer passionate about building modern web applications, exploring Web3, and
+              creating innovative digital experiences.
+
+              I enjoy turning ideas into clean, scalable products using modern technologies while constantly learning
+              about blockchain, AI, and open source. Whether it's developing full-stack applications, contributing to
+              communities, or experimenting with new technologies, I'm always excited to build something impactful.
+
+              Outside of coding, you'll find me exploring space, technology, history, and the future of decentralized
+              innovation.
+
+              Building the future, one project at a time.
+
+
+              Let's build something extraordinary together.
+            </p>
+
+            <div class="about-education">
+              <div class="edu-card glass-card">
+
+                <div class="edu-details">
+                  <h4>Goverment college of engineering and leather technology[GCELT]</h4>
+                  <p class="mono">B.Tech· 2025 – 2029</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: interests + quick facts -->
+          <div class="about-aside reveal-right">
+            <div class="my-photo">
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         SKILLS SECTION
+    ══════════════════════════════════════ -->
+    <section id="skills" aria-label="Skills">
+      <div class="section-inner">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow mono">// 02 — skills</span>
+          <h2 class="section-title">What I Build With</h2>
+        </div>
+
+
+  
+  <!-- Inter & JetBrains Mono Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Configuration variables -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+<body class="min-h-screen py-20 flex flex-col justify-center items-center overflow-x-hidden">
+
+  <!-- Core Section Container -->
+  <section class="w-full max-w-6xl mx-auto px-4 relative">
+    
+    <!-- Ambient glowing backgrounds -->
+    <div class="absolute -top-40 left-1/4 w-[350px] h-[350px] rounded-full bg-[var(--accent-color)] opacity-[0.06] blur-[120px] pointer-events-none"></div>
+    <div class="absolute -bottom-40 right-1/4 w-[350px] h-[350px] rounded-full bg-[var(--primary-color)] opacity-[0.06] blur-[120px] pointer-events-none"></div>
+
+
+    
+    <!-- Category Filter Bar (Hidden for orbital/terminal layouts by design to maintain modular style) -->
+    
+
+    
+    <!-- Orbital Visualization -->
+    <div class="relative w-full max-w-4xl mx-auto h-[600px] flex items-center justify-center overflow-hidden" id="skills-orbit-container">
+      
+      <!-- Central Hub -->
+      <div class="central-core z-10 w-28 h-28 rounded-full flex flex-col items-center justify-center text-center p-3 border shadow-[0_0_50px_var(--glow-color)] transition-transform duration-500 cursor-pointer hover:scale-110">
+        <div class="font-mono text-xs text-[var(--accent-color)] tracking-widest uppercase">My Stack</div>
+        <div class="font-bold text-sm tracking-tight leading-tight mt-1">Core Skills</div>
+        <div class="w-1.5 h-1.5 rounded-full bg-[var(--accent-color)] animate-ping mt-2"></div>
+      </div>
+
+      <!-- Orbital Ring 1 (Inner) -->
+      <div class="orbit-ring w-[240px] h-[240px]"></div>
+      <!-- Inner Orbit Items -->
+      <div class="absolute w-[240px] h-[240px] animate-orbit-cw">
+        
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(0deg) translate(120px) rotate(-0deg)">
+          <div class="orbit-node-inner" data-name="HTML5" data-desc="Semantic page structuring & accessibility standard." data-level="95">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.5 22L0 0H24L22.5 22L12 24.9L1.5 22Z" fill="#E34F26"/>
+  <path d="M12 22.9L20.4 20.6L21.6 2.1H12V22.9Z" fill="#F16529"/>
+  <path d="M12 9.5H7.7L7.4 6.2H12V3H4L4.9 12.8H12V9.5ZM12 16.3L8.6 15.4L8.4 13.1H5.2L5.6 17.5L12 19.3V16.3Z" fill="#EBEBEB"/>
+  <path d="M12 9.5H16.3L15.9 13.9L12 15V18.1L18.4 16.3L19.2 8H12V9.5ZM12 3V6.2H19.8L20 3H12Z" fill="white"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(72deg) translate(120px) rotate(-72deg)">
+          <div class="orbit-node-inner" data-name="CSS3" data-desc="Modern layouts, flexbox, grid, and fluid responsive design." data-level="90">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.5 22L0 0H24L22.5 22L12 24.9L1.5 22Z" fill="#1572B6"/>
+  <path d="M12 22.9L20.4 20.6L21.6 2.1H12V22.9Z" fill="#33A9DC"/>
+  <path d="M12 9.5H7.7L7.4 6.2H12V3H4L4.9 12.8H12V9.5ZM12 16.3L8.6 15.4L8.4 13.1H5.2L5.6 17.5L12 19.3V16.3Z" fill="#EBEBEB"/>
+  <path d="M12 9.5H16.3L15.9 13.9L12 15V18.1L18.4 16.3L19.2 8H12V9.5ZM12 3V6.2H19.8L20 3H12Z" fill="white"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(144deg) translate(120px) rotate(-144deg)">
+          <div class="orbit-node-inner" data-name="JavaScript" data-desc="Dynamic scripting, asynchronous programming, & ES6+ standard." data-level="95">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="24" height="24" rx="3" fill="#F7DF1E"/>
+  <path d="M18.8 19.2C18.1 19.8 17.1 20.2 15.7 20.2C13.2 20.2 11.8 18.6 11.8 16H14.5C14.5 17.4 15.1 18.1 15.9 18.1C16.6 18.1 17.1 17.7 17.1 17C17.1 16.1 16.5 15.7 15.3 15.2L14.6 14.9C13.1 14.2 11.9 13.2 11.9 11.3C11.9 9.1 13.6 7.8 15.9 7.8C17.6 7.8 18.9 8.3 19.6 9.1L18.4 10.8C17.8 10.3 17 9.8 15.9 9.8C15.1 9.8 14.6 10.2 14.6 10.8C14.6 11.5 15.1 11.8 16.2 12.3L16.9 12.6C18.6 13.3 19.8 14.3 19.8 16.4C19.8 17.6 19.4 18.5 18.8 19.2ZM9.5 19C8.9 19.7 7.9 20.2 6.5 20.2C4.1 20.2 2.7 18.6 2.7 16H5.4C5.4 17.4 6 18.1 6.8 18.1C7.5 18.1 8 17.7 8 17V8H10.7V17C10.7 17.9 10.2 18.5 9.5 19Z" fill="#323330"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(216deg) translate(120px) rotate(-216deg)">
+          <div class="orbit-node-inner" data-name="TypeScript" data-desc="Static typing, interface design, & robust enterprise tooling." data-level="88">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="24" height="24" rx="3" fill="#3178C6"/>
+  <path d="M19.1 19C18.4 19.7 17.4 20.2 16 20.2C13.5 20.2 12.1 18.6 12.1 16H14.8C14.8 17.4 15.4 18.1 16.2 18.1C16.9 18.1 17.4 17.7 17.4 17C17.4 16.1 16.8 15.7 15.6 15.2L14.9 14.9C13.4 14.2 12.2 13.2 12.2 11.3C12.2 9.1 13.9 7.8 16.2 7.8C17.9 7.8 19.2 8.3 19.9 9.1L18.7 10.8C18.1 10.3 17.3 9.8 16.2 9.8C15.4 9.8 14.9 10.2 14.9 10.8C14.9 11.5 15.4 11.8 16.5 12.3L17.2 12.6C18.9 13.3 20.1 14.3 20.1 16.4C20.1 17.6 19.7 18.5 19.1 19ZM8.2 20.1V10.1H4.5V7.9H12.2V10.1H8.5V20.1H8.2Z" fill="white"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(288deg) translate(120px) rotate(-288deg)">
+          <div class="orbit-node-inner" data-name="React" data-desc="Declarative component-driven interfaces & state machines." data-level="92">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="12" cy="12" r="2" fill="#61DAFB"/>
+  <path d="M12 6.5C15.8 6.5 19 8.2 20.5 10.5C20.9 11 20.9 11.8 20.5 12.3C19 14.6 15.8 16.3 12 16.3C8.2 16.3 5 14.6 3.5 12.3C3.1 11.8 3.1 11.1 3.5 10.6C5 8.2 8.2 6.5 12 6.5ZM12 5.5C7.5 5.5 3.6 7.6 1.8 10.8C1.3 11.5 1.3 12.5 1.8 13.2C3.6 16.4 7.5 18.5 12 18.5C16.5 18.5 20.4 16.4 22.2 13.2C22.7 12.5 22.7 11.5 22.2 10.8C20.4 7.6 16.5 5.5 12 5.5Z" fill="#61DAFB"/>
+  <path d="M12 6.5C15.8 6.5 19 8.2 20.5 10.5C20.9 11 20.9 11.8 20.5 12.3C19 14.6 15.8 16.3 12 16.3C8.2 16.3 5 14.6 3.5 12.3C3.1 11.8 3.1 11.1 3.5 10.6C5 8.2 8.2 6.5 12 6.5Z" fill="#61DAFB" transform="rotate(60 12 12)"/>
+  <path d="M12 6.5C15.8 6.5 19 8.2 20.5 10.5C20.9 11 20.9 11.8 20.5 12.3C19 14.6 15.8 16.3 12 16.3C8.2 16.3 5 14.6 3.5 12.3C3.1 11.8 3.1 11.1 3.5 10.6C5 8.2 8.2 6.5 12 6.5Z" fill="#61DAFB" transform="rotate(120 12 12)"/>
+</svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orbital Ring 2 (Middle) -->
+      <div class="orbit-ring w-[440px] h-[440px]"></div>
+      <!-- Middle Orbit Items -->
+      <div class="absolute w-[440px] h-[440px] animate-orbit-ccw">
+        
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(0deg) translate(220px) rotate(-0deg)">
+          <div class="orbit-node-inner" data-name="Node.js" data-desc="Asynchronous event-driven server runtime environment." data-level="88">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 1L22.4 7V19L12 25L1.6 19V7L12 1Z" fill="#339933"/>
+  <path d="M12 2.5L20.8 7.6V18.4L12 23.5L3.2 18.4V7.6L12 2.5Z" fill="#43853D"/>
+  <path d="M12 5.5V11L16.8 13.8L16.8 8.2L12 5.5Z" fill="white"/>
+  <path d="M12 18.5V13L7.2 10.2L7.2 15.8L12 18.5Z" fill="white"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(60deg) translate(220px) rotate(-60deg)">
+          <div class="orbit-node-inner" data-name="Express.js" data-desc="Minimalist robust routing & middleware framework for API development." data-level="90">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="24" height="24" rx="3" fill="#303030"/>
+  <path d="M6 7H11V8.5H7.5V11H10.5V12.5H7.5V15.5H11V17H6V7ZM12.5 7L14.3 11L16.1 7H18L15.3 12L18.1 17H16.2L14.4 13L12.6 17H10.7L13.5 12L10.7 7H12.5Z" fill="white"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(120deg) translate(220px) rotate(-120deg)">
+          <div class="orbit-node-inner" data-name="Firebase" data-desc="Real-time database, cloud authentication, & backend-as-a-service." data-level="85">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.9 17.8L1.6 14.8C1.2 14.3 1.3 13.5 1.9 13.1L12 5L3.9 17.8Z" fill="#FFC24C"/>
+  <path d="M12 0L14.2 17.8L12 17.8L12 0Z" fill="#F48120"/>
+  <path d="M12 0L20.1 12.8L22.4 14.8C23 15.3 22.9 16.1 22.3 16.5L12 24V0Z" fill="#FFC24C"/>
+  <path d="M1.6 14.8L12 24L12 12.8L1.6 14.8Z" fill="#DD2C00"/>
+  <path d="M12 0L14.2 17.8L20.1 12.8L12 0Z" fill="#F68220"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(180deg) translate(220px) rotate(-180deg)">
+          <div class="orbit-node-inner" data-name="MongoDB" data-desc="NoSQL document-oriented stores, dynamic schemas, and high scalability." data-level="84">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 0C12 0 7.2 4.8 7.2 11.2C7.2 16 10.4 19.2 12 21.6C13.6 19.2 16.8 16 16.8 11.2C16.8 4.8 12 0 12 0Z" fill="#47A248"/>
+  <path d="M12 0V21.6C12.8 20.4 15.6 17.6 15.6 11.2C15.6 4.8 12 0 12 0Z" fill="#589636"/>
+  <path d="M12 21.6V24C12 24 10.8 22.8 10.8 21.6H12Z" fill="#3F3F3F"/>
+  <path d="M12 21.6V24C12 24 13.2 22.8 13.2 21.6H12Z" fill="#13AA52"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(240deg) translate(220px) rotate(-240deg)">
+          <div class="orbit-node-inner" data-name="PostgreSQL" data-desc="Advanced relational systems, robust transactions, & complex query execution." data-level="86">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 1.5C9.4 1.5 6.7 2.6 4.8 4.6C1.4 8.1 1.4 13.5 4.8 17C6.7 19 9.4 20.1 12 20.1C14.6 20.1 17.3 19 19.2 17C22.6 13.5 22.6 8.1 19.2 4.6C17.3 2.6 14.6 1.5 12 1.5Z" fill="#336791"/>
+  <path d="M14.6 6C13.4 5.3 11.9 4.9 10.4 4.9C8.3 4.9 6.2 5.8 4.8 7.2C2.1 9.9 2.1 14.1 4.8 16.8C6.2 18.2 8.3 19.1 10.4 19.1C12.5 19.1 14.6 18.2 16 16.8C18.7 14.1 18.7 9.9 16 7.2C15.6 6.8 15.1 6.4 14.6 6Z" fill="#2F5E88"/>
+  <path d="M12 17C14.8 17 17 14.8 17 12C17 9.2 14.8 7 12 7C9.2 7 7 9.2 7 12C7 14.8 9.2 17 12 17Z" fill="white"/>
+  <path d="M12 15C13.7 15 15 13.7 15 12C15 10.3 13.7 9 12 9C10.3 9 9 10.3 9 12C9 13.7 10.3 15 12 15Z" fill="#336791"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(300deg) translate(220px) rotate(-300deg)">
+          <div class="orbit-node-inner" data-name="MySQL" data-desc="Relational database administration, database indexing, and replication schemas." data-level="80">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12C1.5 17.8 6.2 22.5 12 22.5C17.8 22.5 22.5 17.8 22.5 12C22.5 6.2 17.8 1.5 12 1.5Z" fill="#00758F"/>
+  <path d="M15.4 6.8C16.8 7.9 17.7 9.5 18 11.2C17 10 15.4 9.5 14 9.5C12.3 9.5 10.8 10.5 10 11.8C9.5 12.6 9.3 13.6 9.5 14.5C9.3 14.2 9.1 13.8 9 13.4C8.4 11.5 8.9 9.5 10.2 8C11.5 6.5 13.5 6 15.4 6.8Z" fill="#F29111"/>
+  <path d="M13.2 11.2C14.5 11.2 15.6 12 16 13C16.2 13.5 16.2 14 16.1 14.5C15.8 13.2 14.6 12.5 13.4 12.5C12.1 12.5 11 13.3 10.5 14.5C10.5 14 10.5 13.5 10.7 13C11.1 12 12 11.2 13.2 11.2Z" fill="white"/>
+</svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orbital Ring 3 (Outer) -->
+      <div class="orbit-ring w-[640px] h-[640px]"></div>
+      <!-- Outer Orbit Items -->
+      <div class="absolute w-[640px] h-[640px] animate-orbit-cw">
+        
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(0deg) translate(320px) rotate(-0deg)">
+          <div class="orbit-node-inner" data-name="Solidity" data-desc="Smart contracts design, security auditing, and Ethereum Virtual Machine (EVM) standard." data-level="80">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 0L21.5 5.5L12 11L2.5 5.5L12 0Z" fill="#363636"/>
+  <path d="M12 11L21.5 16.5L12 22L2.5 16.5L12 11Z" fill="#363636"/>
+  <path d="M12 22L21.5 16.5L12 11V22Z" fill="#242424"/>
+  <path d="M12 11L21.5 5.5L12 0V11Z" fill="#242424"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(45deg) translate(320px) rotate(-45deg)">
+          <div class="orbit-node-inner" data-name="Ethereum" data-desc="Decentralized application architectures & gas optimization practices." data-level="85">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 0L11.8 0.6V16.3L12 16.5L19.2 12.2L12 0Z" fill="#3C3C3D"/>
+  <path d="M12 0L4.8 12.2L12 16.5V8.8V0Z" fill="#8C8C8C"/>
+  <path d="M12 18L11.9 18.1V23.8L12 24L19.2 13.9L12 18Z" fill="#3C3C3D"/>
+  <path d="M12 24V18L4.8 13.9L12 24Z" fill="#8C8C8C"/>
+  <path d="M12 16.5L19.2 12.2L12 9V16.5Z" fill="#141414"/>
+  <path d="M12 16.5V9L4.8 12.2L12 16.5Z" fill="#393939"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(90deg) translate(320px) rotate(-90deg)">
+          <div class="orbit-node-inner" data-name="Polygon" data-desc="Layer 2 scaling architectures, state commit protocols, & sidechain deployment." data-level="78">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 1.5L21.1 6.8V17.2L12 22.5L2.9 17.2V6.8L12 1.5Z" fill="#8247E5" fill-opacity="0.2"/>
+  <path d="M12 1.5L21.1 6.8V17.2L12 22.5L2.9 17.2V6.8L12 1.5ZM12 5.2L6.1 8.6V15.4L12 18.8L17.9 15.4V8.6L12 5.2Z" fill="#8247E5"/>
+  <circle cx="12" cy="12" r="3.5" fill="#8247E5"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(135deg) translate(320px) rotate(-135deg)">
+          <div class="orbit-node-inner" data-name="Web3.js" data-desc="JSON-RPC bridging, wallet connections, & direct smart contract execution." data-level="83">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="24" height="24" rx="12" fill="#F16822"/>
+  <path d="M6 7H18V9H14V17H10V9H6V7ZM15 11H17V17H15V11ZM7 11H9V17H7V11Z" fill="white"/>
+  <path d="M12 11.5L14 13.5L12 15.5L10 13.5L12 11.5Z" fill="white" opacity="0.8"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(180deg) translate(320px) rotate(-180deg)">
+          <div class="orbit-node-inner" data-name="Git" data-desc="Distributed version control, branching workflows, & commit archaeology." data-level="92">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M23.2 11.1L12.9 0.8C12.3 0.2 11.4 0.2 10.8 0.8L0.8 10.8C0.2 11.4 0.2 12.3 0.8 12.9L11.1 23.2C11.7 23.8 12.6 23.8 13.2 23.2L23.2 13.2C23.8 12.6 23.8 11.7 23.2 11.1ZM13.8 17.1V13.8C13.8 12.6 12.8 11.6 11.6 11.6C10.4 11.6 9.4 12.6 9.4 13.8V16.8C8.9 17.1 8.5 17.7 8.5 18.3C8.5 19.3 9.3 20.1 10.3 20.1C11.3 20.1 12.1 19.3 12.1 18.3C12.1 17.7 11.7 17.1 11.2 16.8V13.8C11.2 13.6 11.4 13.4 11.6 13.4C11.8 13.4 12 13.6 12 13.8V17.1C11.5 17.4 11.1 18 11.1 18.6C11.1 19.6 11.9 20.4 12.9 20.4C13.9 20.4 14.7 19.6 14.7 18.6C14.7 18 14.3 17.4 13.8 17.1Z" fill="#F05032"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(225deg) translate(320px) rotate(-225deg)">
+          <div class="orbit-node-inner" data-name="GitHub" data-desc="Collaborative PR reviews, repository hosting, & automated CI/CD pipelines." data-level="90">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.8 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.21 23.505 15.825 23.385C20.61 21.795 24 17.31 24 12C24 5.37 18.63 0 12 0Z" fill="currentColor"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(270deg) translate(320px) rotate(-270deg)">
+          <div class="orbit-node-inner" data-name="Docker" data-desc="OS-level virtualization container engines, custom Dockerfiles, & orchestration." data-level="80">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.5 12.5C1.5 8 5.1 4.5 9.6 4.5V11H16V12.5H1.5ZM22.5 12.5C22.5 17 18.9 20.5 14.4 20.5H5.6V14H12V12.5H22.5Z" fill="#2496ED" fill-opacity="0.3"/>
+  <path d="M14 9H16.5V11.5H14V9ZM10.5 9H13V11.5H10.5V9ZM10.5 5.5H13V8H10.5V5.5ZM7 9H9.5V11.5H7V9ZM7 5.5H9.5V8H7V5.5ZM3.5 9H6V11.5H3.5V9ZM14 5.5H16.5V8H14V5.5ZM17.5 9H20V11.5H17.5V9ZM21 11.5V12C21 15.9 17.9 19 14 19H8C4.1 19 1 15.9 1 12C1 11.6 1 11.3 1.1 10.9L1.6 11C1.6 11 2.3 13.5 5.5 13.5C8.7 13.5 10.5 11.5 10.5 11.5V9H13.5V11.5C13.5 11.5 15.3 13.5 18.5 13.5C20.4 13.5 21 12 21 11.5Z" fill="#2496ED"/>
+</svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="orbit-node" style="transform: translate(-50%, -50%) rotate(315deg) translate(320px) rotate(-315deg)">
+          <div class="orbit-node-inner" data-name="Linux" data-desc="System administration, bash scripting, file systems, and server management." data-level="84">
+            <div class="w-5 h-5 flex items-center justify-center text-slate-300">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12C1.5 17.8 6.2 22.5 12 22.5C17.8 22.5 22.5 17.8 22.5 12C22.5 6.2 17.8 1.5 12 1.5ZM12 4.2C13.5 4.2 14.7 5.4 14.7 6.9C14.7 8.4 13.5 9.6 12 9.6C10.5 9.6 9.3 8.4 9.3 6.9C9.3 5.4 10.5 4.2 12 4.2ZM15.4 18.1C14 19.3 12.1 19.8 10.2 19.8C8.3 19.8 6.4 19.1 5 17.7C5.8 16.8 7 16.3 8.3 16.3C9.6 16.3 10.8 16.8 11.6 17.7C12.4 16.8 13.6 16.3 14.9 16.3C16.2 16.3 17.4 16.8 18.2 17.7C17.5 18.1 16.5 18.1 15.4 18.1ZM16.3 14.7C16.3 15.1 15.9 15.4 15.5 15.4C15.1 15.4 14.8 15.1 14.8 14.7V11.2C14.8 10.8 15.1 10.5 15.5 10.5C15.9 10.5 16.3 10.8 16.3 11.2V14.7ZM9.2 14.7C9.2 15.1 8.8 15.4 8.4 15.4C8 15.4 7.7 15.1 7.7 14.7V11.2C7.7 10.8 8 10.5 8.4 10.5C8.8 10.5 9.2 10.8 9.2 11.2V14.7ZM12 14.2C11 14.2 10.2 13.4 10.2 12.4C10.2 11.4 11 10.6 12 10.6C13 10.6 13.8 11.4 13.8 12.4C13.8 13.4 13 14.2 12 14.2Z" fill="#FCC624"/>
+  <circle cx="11" cy="6" r="1" fill="black"/>
+  <circle cx="13" cy="6" r="1" fill="black"/>
+</svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail Overlay Panel (Bottom Hover Display) -->
+      <div id="orbit-detail-panel" class="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-sm w-11/12 rounded-xl p-4 border text-center backdrop-blur bg-[var(--card-bg)] opacity-0 transition-all duration-300 transform translate-y-2 pointer-events-none">
+        <div class="flex items-center justify-center gap-3 mb-2">
+          <div id="orbit-detail-icon" class="w-6 h-6"></div>
+          <h4 id="orbit-detail-name" class="font-bold text-base"></h4>
+        </div>
+        <p id="orbit-detail-desc" class="text-xs text-slate-400 mb-2"></p>
+        
+        <div class="w-full bg-slate-800/80 rounded-full h-1.5 overflow-hidden">
+          <div id="orbit-detail-bar" class="bg-[var(--accent-color)] h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+        </div>
+        <span id="orbit-detail-level" class="text-[10px] font-mono text-[var(--accent-color)] mt-1 inline-block">0%</span>
+        
+      </div>
+    </div>
+
+  </section>
+
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Setup dynamic Category filter tabs if present (for non-terminal and non-orbit modes too)
+      const categoryTabs = document.querySelectorAll('.category-tab');
+      if (categoryTabs.length > 0) {
+        categoryTabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+            categoryTabs.forEach(t => t.classList.remove('active', 'border-[var(--accent-color)]', 'text-white'));
+            tab.classList.add('active', 'border-[var(--accent-color)]', 'text-white');
+            
+            const category = tab.getAttribute('data-category');
+            const items = document.querySelectorAll('.skill-card-item, .skill-group-card');
+            
+            items.forEach(item => {
+              const itemCat = item.getAttribute('data-category');
+              if (category === 'all' || itemCat === category || (category === 'database' && itemCat === 'database-mobile')) {
+                item.style.opacity = '1';
+                item.style.transform = 'scale(1)';
+                item.style.display = 'block';
+              } else {
+                item.style.opacity = '0';
+                item.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                  if (tab.getAttribute('data-category') !== 'all' && item.getAttribute('data-category') !== category) {
+                    item.style.display = 'none';
+                  }
+                }, 300);
+              }
+            });
+          });
+        });
+      }
+
+      
+    // Interactivity for orbit nodes
+    const nodes = document.querySelectorAll('.orbit-node-inner');
+    const panel = document.getElementById('orbit-detail-panel');
+    const panelIcon = document.getElementById('orbit-detail-icon');
+    const panelName = document.getElementById('orbit-detail-name');
+    const panelDesc = document.getElementById('orbit-detail-desc');
+    const panelBar = document.getElementById('orbit-detail-bar');
+    const panelLevel = document.getElementById('orbit-detail-level');
+
+    nodes.forEach(node => {
+      // Counter-rotate the inner icon so it stays upright!
+      const parent = node.closest('.animate-orbit-cw, .animate-orbit-ccw');
+      const isCw = parent.classList.contains('animate-orbit-cw');
+      
+      node.addEventListener('mouseenter', () => {
+        const name = node.getAttribute('data-name');
+        const desc = node.getAttribute('data-desc');
+        const level = node.getAttribute('data-level');
+        const svg = node.querySelector('svg').outerHTML;
+
+        panelIcon.innerHTML = svg;
+        panelName.textContent = name;
+        panelDesc.textContent = desc;
+        if (panelBar) {
+          panelBar.style.width = level + '%';
+          panelLevel.textContent = level + '% Proficiency';
+        }
+
+        panel.style.opacity = '1';
+        panel.style.transform = 'translate(-50%, 0) scale(1)';
+      });
+
+      node.addEventListener('mouseleave', () => {
+        panel.style.opacity = '0';
+        panel.style.transform = 'translate(-50%, 8px) scale(0.95)';
+      });
+    });
+    
+    });
+  </script>
+  
+</body>
+</html>
+        </div><!-- /skills-grid -->
+
+        <!-- GitHub activity heatmap -->
+
+
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PROJECTS SECTION
+    ══════════════════════════════════════ -->
+    <section id="projects" aria-label="Projects">
+      <div class="section-inner">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow mono">// 03 — projects</span>
+          <h2 class="section-title">Things I've Built</h2>
+          <p class="section-subtitle">From hackathon sprints to production apps — these are real products with real
+            users.</p>
+        </div>
+
+        <!-- Featured project -->
+        <div class="project-featured glass-card reveal-up">
+          <div class="project-featured-inner">
+            <div class="project-featured-text">
+              <div class="project-featured-badge mono">★ Featured Project</div>
+              <h3 class="project-featured-title">KrishiMitra <span class="bengali-sub">কৃষিমিত্র</span></h3>
+              <p class="project-featured-desc">
+                An AI-powered agricultural companion for Bengali-speaking farmers. Features Bengali voice chat (Claude
+                API), real-time crop disease detection via image upload, weather forecasts, and market price feeds.
+                Built with React, Firebase Auth, and a multi-component architecture. Started as a hackathon project —
+                evolved into a production-grade web app.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Claude API</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Bengali NLP</span>
+                <span class="tech-tag">TensorFlow</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-primary btn-sm" aria-label="View KrishiMitra live demo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="#" class="btn-ghost btn-sm" aria-label="View KrishiMitra on GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-featured-visual">
+              <div class="project-mock">
+                <div class="mock-bar">
+                  <span class="mock-dot red"></span>
+                  <span class="mock-dot yellow"></span>
+                  <span class="mock-dot green"></span>
+                </div>
+                <div class="mock-body">
+                  <div class="mock-line w-60"></div>
+                  <div class="mock-line w-90"></div>
+                  <div class="mock-line w-45"></div>
+                  <div class="mock-block"></div>
+                  <div class="mock-line w-75"></div>
+                  <div class="mock-line w-55"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project cards grid -->
+        <div class="projects-grid">
+
+          <article class="project-card glass-card reveal-up delay-1">
+            <div class="project-card-top">
+              <div class="project-icon">🌿</div>
+              <div class="project-card-links">
+                <a href="#" aria-label="CarbonLens GitHub"><svg width="18" height="18" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg></a>
+                <a href="#" aria-label="CarbonLens live demo"><svg width="18" height="18" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                  </svg></a>
+              </div>
+            </div>
+            <h3>CarbonLens AI</h3>
+            <p>Blockchain + AI carbon credit trading platform. Smart contracts on Ethereum (Solidity), AI-powered
+              emissions analysis, React frontend, MongoDB backend.</p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Solidity</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Web3</span>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal-up delay-2">
+            <div class="project-card-top">
+              <div class="project-icon">🍎</div>
+              <div class="project-card-links">
+                <a href="#" aria-label="NutriMind GitHub"><svg width="18" height="18" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg></a>
+                <a href="#" aria-label="NutriMind live"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                  </svg></a>
+              </div>
+            </div>
+            <h3>NutriMind</h3>
+            <p>AI-powered nutrition SaaS with meal planning, calorie tracking, personalized recommendations, and a full
+              onboarding flow. Built in record time as a single-file React app.</p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">AI API</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">SaaS</span>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal-up delay-3">
+            <div class="project-card-top">
+              <div class="project-icon">📊</div>
+              <div class="project-card-links">
+                <a href="#" aria-label="PulseCampus GitHub"><svg width="18" height="18" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg></a>
+                <a href="#" aria-label="PulseCampus live"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                  </svg></a>
+              </div>
+            </div>
+            <h3>PulseCampus</h3>
+            <p>AI-powered academic burnout prediction for college students. Monitors stress signals, CGPA trends, and
+              activity patterns to flag at-risk students before they drop out.</p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">ML Model</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal-up delay-1">
+            <div class="project-card-top">
+              <div class="project-icon">🌌</div>
+              <div class="project-card-links">
+                <a href="#" aria-label="Portfolio GitHub"><svg width="18" height="18" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg></a>
+                <a href="#" aria-label="Portfolio live"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                  </svg></a>
+              </div>
+            </div>
+            <h3>Dev Portfolio v2</h3>
+            <p>This very site — space-themed personal portfolio built from scratch with Next.js 15, React, TypeScript,
+              Framer Motion animations, and zero templates.</p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Next.js 15</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Framer Motion</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--more glass-card reveal-up delay-2">
+            <div class="more-projects-inner">
+              <span class="more-icon">+</span>
+              <p class="mono">More on GitHub</p>
+              <a href="https://github.com/arpanroy" target="_blank" rel="noopener noreferrer"
+                class="btn-ghost btn-sm">Visit GitHub →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         EXPERIENCE & ACHIEVEMENTS SECTION
+    ══════════════════════════════════════ -->
+    <section id="experience" aria-label="Experience and achievements">
+      <div class="section-inner">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow mono">// 04 — experience</span>
+          <h2 class="section-title">The Journey So Far</h2>
+        </div>
+
+        <div class="exp-grid">
+
+          <!-- Timeline -->
+          <div class="timeline reveal-left">
+            <h3 class="exp-col-title mono">// timeline</h3>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <span class="timeline-date mono">2025 — Present</span>
+                <h4>Open Source Contributor</h4>
+                <p>Active contributor across AI tools, developer utilities, and education platforms. Working toward
+                  becoming a core maintainer.</p>
+                <div class="timeline-tags">
+                  <span class="tech-tag">GitHub</span>
+                  <span class="tech-tag">PRs</span>
+                  <span class="tech-tag">Issues</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <span class="timeline-date mono">2026</span>
+                <h4>Campus ambassador at elite coders </h4>
+                <p>Selected as a campus ambassador at elite coders </p>
+                <div class="timeline-tags">
+                  <span class="tech-tag">Selected</span>
+                  <span class="tech-tag"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card">
+                <span class="timeline-date mono">2025</span>
+                <h4>B.Tech — Leather technology</h4>
+                <p>Started at GCELT, Kolkata. Immediately pivoted into software, AI, and open source alongside my core
+                  coursework.</p>
+                <div class="timeline-tags">
+                  <span class="tech-tag">Goverment college of engineering and leather technology</span>
+                  <span class="tech-tag">2025–2029</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Achievements -->
+          <div class="achievements-col reveal-right">
+            <h3 class="exp-col-title mono">// achievements</h3>
+
+            <div class="achievement-cards">
+              <div class="achievement-card glass-card">
+                <div class="ach-icon">🏆</div>
+                <div class="ach-text">
+                  <h4>Hackathons</h4>
+                  <p>3+ hackathons participated.</p>
+                </div>
+              </div>
+              <div class="achievement-card glass-card">
+                <div class="ach-icon">🎯</div>
+                <div class="ach-text">
+                  <h4>Campus Ambassador</h4>
+                  <p>Applied and selected for technology ambassador programs representing developer communities on
+                    campus.</p>
+                </div>
+              </div>
+              <div class="achievement-card glass-card">
+                <div class="ach-icon">📜</div>
+                <div class="ach-text">
+                  <h4>Certifications</h4>
+                  <p>5+ certifications in AI/ML, Web Development, Cloud, and Blockchain technologies.</p>
+                </div>
+              </div>
+              <div class="achievement-card glass-card">
+                <div class="ach-icon">🎵</div>
+                <div class="ach-text">
+                  <h4></h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /exp-grid -->
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CONTACT SECTION
+    ══════════════════════════════════════ -->
+    <section id="contact" aria-label="Contact">
+      <div class="section-inner">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow mono">// 05 — contact</span>
+          <h2 class="section-title">Let's Build Something</h2>
+          <p class="section-subtitle">Open to internships, collaborations, open source projects, and interesting
+            conversations about tech.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact form -->
+          <div class="contact-form-wrap reveal-left">
+            <div class="glass-card contact-form-card">
+              <div id="form-success" class="form-success" aria-live="polite" hidden>
+                <span class="success-icon">✓</span>
+                <p>Lets build something crazy</p>
+              </div>
+              <div id="contact-form-inner">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name" class="mono">// name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+                    <span class="field-error" id="name-error" aria-live="polite"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="mono">// email</label>
+                    <input type="email" id="email" name="email" placeholder="you@domain.com" autocomplete="email" />
+                    <span class="field-error" id="email-error" aria-live="polite"></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="subject" class="mono">// subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+                  <span class="field-error" id="subject-error" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="message" class="mono">// message</label>
+                  <textarea id="message" name="message" rows="5"
+                    placeholder="Tell me about your project, idea, or opportunity..."></textarea>
+                  <span class="field-error" id="message-error" aria-live="polite"></span>
+                </div>
+                <button type="button" id="submit-btn" class="btn-primary btn-full">
+                  <span id="submit-text">Send Message</span>
+                  <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact info -->
+          <div class="contact-info reveal-right">
+            <div class="contact-links glass-card">
+              <h3 class="mono contact-find-me">// find_me_at</h3>
+              <a href="https://github.com/arg0506" target="_blank" rel="noopener noreferrer" class="social-link">
+                <div class="social-icon-wrap github-bg">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="social-name">GitHub</p>
+                  <p class="social-handle mono">@arg0506</p>
+                </div>
+                <svg class="social-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/arpan-roy-75955031a/" target="_blank" rel="noopener noreferrer" class="social-link">
+                <div class="social-icon-wrap linkedin-bg">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="social-name">LinkedIn</p>
+                  <p class="social-handle mono">Arpan Roy</p>
+                </div>
+                <svg class="social-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="https://x.com/arg05_06" target="_blank" rel="noopener noreferrer" class="social-link">
+                <div class="social-icon-wrap twitter-bg">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.264 5.636 5.9-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="social-name">Twitter / X</p>
+                  <p class="social-handle mono">@arg05_06</p>
+                </div>
+                <svg class="social-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="mailto:arpanroy0506@example.com" class="social-link">
+                <div class="social-icon-wrap email-bg">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="social-name">Email</p>
+                  <p class="social-handle mono">arpanroy0506@example.com</p>
+                </div>
+                <svg class="social-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="availability-card glass-card">
+              <div class="avail-dot"></div>
+              <div>
+                <p class="avail-label mono">Current Status</p>
+                <p class="avail-text">Available for internships &amp; part-time roles (remote) · Summer 2026</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo mono">
+        <AR> Arpan Roy
+      </div>
+      <p class="footer-copy mono">Designed &amp; built from scratch in Kolkata · 2026</p>
+
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
